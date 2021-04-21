@@ -1,0 +1,7 @@
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\bin\Debug\GOST34.exe.config
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\bin\Debug\GOST34.exe
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\bin\Debug\GOST34.pdb
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\obj\Debug\GOST34.csprojAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\obj\Debug\GOST34.csproj.CoreCompileInputs.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\obj\Debug\GOST34.exe
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\GOST34\obj\Debug\GOST34.pdb

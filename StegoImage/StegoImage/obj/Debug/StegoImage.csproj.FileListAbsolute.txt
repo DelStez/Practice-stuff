@@ -1,0 +1,10 @@
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\bin\Debug\StegoImage.exe.config
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\bin\Debug\StegoImage.exe
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\bin\Debug\StegoImage.pdb
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.csprojAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.StegoImage.resources
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.Properties.Resources.resources
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.csproj.GenerateResource.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.csproj.CoreCompileInputs.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.exe
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\StegoImage\obj\Debug\StegoImage.pdb

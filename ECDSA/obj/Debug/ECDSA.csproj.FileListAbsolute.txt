@@ -1,0 +1,7 @@
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\bin\Debug\ECDSA.exe.config
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\bin\Debug\ECDSA.exe
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\bin\Debug\ECDSA.pdb
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\obj\Debug\ECDSA.csprojAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\obj\Debug\ECDSA.csproj.CoreCompileInputs.cache
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\obj\Debug\ECDSA.exe
+C:\Users\Kanda\Documents\GitHub\Secret-laboratory\Cryptology (3 курс)\ECDSA\obj\Debug\ECDSA.pdb

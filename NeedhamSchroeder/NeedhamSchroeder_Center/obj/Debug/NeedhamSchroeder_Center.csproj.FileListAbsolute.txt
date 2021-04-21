@@ -1,0 +1,7 @@
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\bin\Debug\NeedhamSchroeder_Center.exe.config
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\bin\Debug\NeedhamSchroeder_Center.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\bin\Debug\NeedhamSchroeder_Center.pdb
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\obj\Debug\NeedhamSchroeder_Center.csprojAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\obj\Debug\NeedhamSchroeder_Center.csproj.CoreCompileInputs.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\obj\Debug\NeedhamSchroeder_Center.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Center\obj\Debug\NeedhamSchroeder_Center.pdb

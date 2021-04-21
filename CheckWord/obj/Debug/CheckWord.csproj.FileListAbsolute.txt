@@ -1,0 +1,7 @@
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\obj\Debug\CheckWord.csprojAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\obj\Debug\CheckWord.csproj.CoreCompileInputs.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\bin\Debug\CheckWord.exe.config
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\bin\Debug\CheckWord.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\bin\Debug\CheckWord.pdb
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\obj\Debug\CheckWord.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\CheckWord\obj\Debug\CheckWord.pdb
