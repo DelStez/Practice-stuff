@@ -1,0 +1,5 @@
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\Number_generator_file\bin\Debug\Number_generator_file.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\Number_generator_file\bin\Debug\Number_generator_file.pdb
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\Number_generator_file\obj\Debug\Number_generator_file.csprojResolveAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\Number_generator_file\obj\Debug\Number_generator_file.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\Number_generator_file\obj\Debug\Number_generator_file.pdb

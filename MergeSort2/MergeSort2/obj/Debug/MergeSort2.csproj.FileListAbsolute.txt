@@ -1,0 +1,9 @@
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\bin\Debug\MergeSort2.exe.config
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\bin\Debug\MergeSort2.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\bin\Debug\MergeSort2.pdb
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\obj\Debug\MergeSort2.csprojResolveAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\obj\Debug\MergeSort2.Properties.Resources.resources
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\obj\Debug\MergeSort2.csproj.GenerateResource.Cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\obj\Debug\MergeSort2.exe
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\obj\Debug\MergeSort2.pdb
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort2\MergeSort2\obj\Debug\MergeSort2.Form1.resources
