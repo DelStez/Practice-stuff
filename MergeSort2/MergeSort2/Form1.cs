@@ -17,13 +17,21 @@ namespace MergeSort2
 
         public string mFilePath = string.Empty;
         public string aFilePath = string.Empty;
-
-        private void MergeSort2()
+        // We're have file with numbers on every string: If it's true - sort every line, then sort lines together like as big array
+        private void ReadandStart(string pathMain)
         {
-            using (StreamReader sr = new StreamReader(mFilePath))
+            using (StreamReader sr = new StreamReader(pathMain))
             {
-                using 
+                string line = string.Empty;
+                                
             }
+                        
+        }
+
+        // "Add" - additional
+        private void MergeSort(string nameAddFile)
+        {
+            
         }
 
         public Form1()
@@ -71,9 +79,9 @@ namespace MergeSort2
         private void button1_Click(object sender, EventArgs e)
         {
             //Creating Additional File
-            string getDirectory = Path.GetFileName(Path.GetDirectoryName(mFilePath));
-            string nameAddFile = "addFile.txt";
-            
+            string nameAddFile = Path.GetFileName(Path.GetDirectoryName(mFilePath)) + "addFile.txt";
+            File.Create(nameAddFile).Dispose();
+
             //MergeSort function
             //show result
         }
