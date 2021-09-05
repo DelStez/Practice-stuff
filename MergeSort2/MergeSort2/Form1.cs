@@ -17,6 +17,15 @@ namespace MergeSort2
 
         public string mFilePath = string.Empty;
         public string aFilePath = string.Empty;
+
+        private void MergeSort2()
+        {
+            using (StreamReader sr = new StreamReader(mFilePath))
+            {
+                using 
+            }
+        }
+
         public Form1()
         {
             InitializeComponent();
@@ -33,10 +42,14 @@ namespace MergeSort2
                 string line;
                 while ((line = iRead.ReadLine()) != null)
                 {
-                    string[] items = line.Split(',');
+                    string[] items = line.Split(' ');
                     foreach (var item in items)
                     {
                         int integer = int.Parse(item);
+                        if (thatFile)
+                        {
+                            listMainFile.Items.Add(integer);
+                        }
                     }
                 }
                 // check: what is file
@@ -51,7 +64,18 @@ namespace MergeSort2
             {
                 textMainFilePath.Text = mainFileLoad.FileName;
                 mFilePath = mainFileLoad.FileName;
+                ReadToFormForShowContent(mFilePath, true);
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            //Creating Additional File
+            string getDirectory = Path.GetFileName(Path.GetDirectoryName(mFilePath));
+            string nameAddFile = "addFile.txt";
+            
+            //MergeSort function
+            //show result
         }
     }
 }
