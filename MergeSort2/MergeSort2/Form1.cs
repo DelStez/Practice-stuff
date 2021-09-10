@@ -23,15 +23,20 @@ namespace MergeSort2
             using (StreamReader sr = new StreamReader(pathMain))
             {
                 string line = string.Empty;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    
+                }
+                
                                 
             }
                         
         }
 
         // "Add" - additional
-        private void MergeSort(string nameAddFile)
+        private void MergeSort(string nameAddFile, int leftIndex, int RightIndex, int mid)
         {
-            
+            var leftPart =  
         }
 
         public Form1()
