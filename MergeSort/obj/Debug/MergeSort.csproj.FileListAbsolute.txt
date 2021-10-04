@@ -1,9 +1,10 @@
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\bin\Debug\MergeSort.exe.config
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\bin\Debug\MergeSort.exe
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\bin\Debug\MergeSort.pdb
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.csprojResolveAssemblyReference.cache
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.Properties.Resources.resources
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.csproj.GenerateResource.Cache
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.exe
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.pdb
 C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.Form1.resources
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.csprojAssemblyReference.cache
+C:\Users\Kanda\Documents\GitHub\Practice-stuff\MergeSort\obj\Debug\MergeSort.csproj.CoreCompileInputs.cache

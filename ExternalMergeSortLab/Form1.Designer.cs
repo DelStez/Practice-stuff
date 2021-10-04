@@ -1,4 +1,4 @@
-﻿namespace MergeSort
+﻿namespace ExternalMergeSortLab
 {
     partial class Form1
     {
@@ -95,7 +95,6 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "button2";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -113,6 +112,7 @@
             this.label2.Size = new System.Drawing.Size(100, 23);
             this.label2.TabIndex = 7;
             this.label2.Text = "Time:";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
