@@ -17,6 +17,7 @@ namespace MergeSort
         public OpenFileDialog opnMainFile = new OpenFileDialog();
         public string mFilePath = string.Empty;
         public string aFilePath = string.Empty;
+        public int Iterators = 0;
         public OpenFileDialog mainFileLoad = new OpenFileDialog();
         public string pattern = @"([A-Za-z])+";
 
@@ -29,24 +30,35 @@ namespace MergeSort
             mainFileLoad.RestoreDirectory = true;
         }
 
-        private void ReadToFormForShowContent(string path, bool thatFile)
+        public void ReadToFormForShowContent(string path, bool thatFile)
         {
-            showContentBoxMain.Text = string.Empty;
+            startButton.Enabled = false;
+            bool empty = true;
             using (StreamReader iRead = new StreamReader(path))
             {
                 string line;
                 while ((line = iRead.ReadLine()) != null)
                 {
+                    empty = false;
                     if (!Regex.IsMatch(line, pattern))
                     {
-                        showContentBoxMain.Text += line;
+                        if(thatFile) showContentBoxMain.Text += (line + " ");
+                        else  showContentBoxMain1.Text += (line + " ");
+                        startButton.Enabled = true;
                     }
                     else
                     {
                         MessageBox.Show("В файле присутсвуют постороние символы");
                         showContentBoxMain.Clear();
+                        showContentBoxMain1.Clear();
                         return;
                     }
+                    Iterators++;
+                }
+
+                if (empty)
+                {
+                    MessageBox.Show("Файл пуст");
                 }
             }
         }
@@ -57,6 +69,7 @@ namespace MergeSort
             {
                 textMainFilePath.Text = mainFileLoad.FileName;
                 mFilePath = mainFileLoad.FileName;
+                showContentBoxMain.Clear();
                 ReadToFormForShowContent(mFilePath, true);
             }
         }
@@ -70,7 +83,7 @@ namespace MergeSort
             //show result
         }
 
-        private void SplitMainFile(string pathMainFile)
+        public void SplitMainFile(string pathMainFile)
         {
             //Creating additional files
             FileStream fs_first = new FileStream("adF1.ms", FileMode.OpenOrCreate);
@@ -79,101 +92,118 @@ namespace MergeSort
             fs_second.Close();
             using (StreamReader mainFile = File.OpenText(pathMainFile))
             {
-                //Reading main file
-                string line = string.Empty;
-                int i = 0;
-                while (( line = mainFile.ReadLine()) != null)
+                using (StreamWriter fs1 = new StreamWriter("adF1.ms"), fs2 = new StreamWriter("adF2.ms"))
                 {
-                    using(StreamWriter fs1 = new StreamWriter("adF1.ms"), fs2 = new StreamWriter("adF2.ms"))
+                    //Reading main file
+                    string line = string.Empty;
+                    int i = 0;
+                    while (( line = mainFile.ReadLine()) != null)
                     {
-                        int temp = Convert.ToInt32(line);
-                        var t = new UTF8Encoding(true).GetBytes(Convert.ToString(temp));
+                    
+                        var t = new UTF8Encoding(true).GetBytes(Convert.ToString(line));
                         if (i % 2 == 0)
-                            fs1.WriteLine(t);
+                            fs1.WriteLine(line);
                         else
-                            fs2.WriteLine(t);
+                            fs2.WriteLine(line);
+                        i++;
                     }
+                    
                 }
             }
-             
         }
-
-        private void SimpleMergeSort(string pathMainFile)
+        public bool isSorter(string pathMainFile)
         {
-            int k = 1, a1 = 0, a2 = 0;
-            int f1 = 0, f2 = 0;
-            using (StreamReader af1 = File.OpenText("adF1.ms"), af2 = File.OpenText("adF2.ms"))
+            using (StreamReader af1 = File.OpenText(pathMainFile))
             {
-                string lineOfFile1 = string.Empty, lineOfFile2 = string.Empty;
-                while ((lineOfFile1 = af1.ReadLine()) != null && (lineOfFile2 = af2.ReadLine()) != null)
+                string a1 = "0";
+                string a2 = "0";
+                a1 = af1.ReadLine();
+                a2 = af1.ReadLine();
+                while (a1 != null && a2  != null)
                 {
-                    int i = 0, j = 0;
-                    f1 = 0; f2 = 0;
-                    while (i < k && j < k && ((lineOfFile1 = af1.ReadLine()) != null) &&((lineOfFile2 = af2.ReadLine()) != null))
+                    if (Convert.ToInt32(a1) > Convert.ToInt32(a2))
+                        return false;
+                    else
                     {
-                        a1 = Convert.ToInt32(lineOfFile1);
-                        a2 = Convert.ToInt32(lineOfFile2);
-                        using (FileStream fs = new FileStream("temp.txt",FileMode.OpenOrCreate))
+                        a1 = a2;
+                        a2 = af1.ReadLine();
+                    }
+
+                }        
+            }
+            return true;
+        }
+        public void SimpleMergeSort(string pathMainFile)
+        {
+            int k = 1;
+            string a1;
+            string a2;
+            bool b;
+            int f1 = 0, f2 = 0;
+            while (true) 
+            {
+                if(isSorter(pathMainFile)) 
+                    break;
+                SplitMainFile(pathMainFile);
+                using (StreamReader af1 = File.OpenText("adF1.ms"), af2 = File.OpenText("adF2.ms"))
+                {
+                    using (StreamWriter fs = new StreamWriter(pathMainFile))
+                    {
+                        string lineOfFile1 = string.Empty, lineOfFile2 = string.Empty; 
+                        a1 = af1.ReadLine();
+                        a2 = af2.ReadLine();
+                        b = true;
+                        while (a2 != null && a1 != null)
                         {
-                            if (a1 < a2)
+                            int i = 0, j = 0;
+                            while ((i < k || j < k) && a2 != null && a1 != null)
                             {
-                                var t =  new UTF8Encoding(true).GetBytes(Convert.ToString(a1));
-                                fs.Write(t, 0 , t.Length);
-                                a1 = Convert.ToInt32(lineOfFile1);
+                                if (Convert.ToInt32(a1) < Convert.ToInt32(a2))
+                                {
+                                    fs.WriteLine(a1);
+                                    a1 = af1.ReadLine();
+                                    i++;
+                                }
+                                else
+                                {
+                                    fs.WriteLine(a2);
+                                    a2 = af2.ReadLine();
+                                    j++;
+                                }
+                            }
+                            while (i < k && a1 != null)
+                            {
+                                fs.WriteLine(a1);
+                                a1 = af1.ReadLine();
                                 i++;
                             }
-                            else
+                            while (j < k && a2 != null)
                             {
-                                var t =  new UTF8Encoding(true).GetBytes(Convert.ToString(a2));
-                                fs.Write(t, 0 , t.Length);
-                                a2 = Convert.ToInt32(lineOfFile2);
+                                fs.WriteLine(a2);
+                                a2 = af2.ReadLine();
                                 j++;
-                            }
+                            } 
                         }
+                        while (a1 != null)
+                        {
+                            fs.WriteLine(a1);
+                            a1 = af1.ReadLine();
+                        }
+                        while (a2 != null)
+                        {
+                            fs.WriteLine(a2);
+                            a2 = af2.ReadLine();
+                        } 
+                        k*=2;
                     }
-                    using (FileStream fs = new FileStream("temp.txt", FileMode.OpenOrCreate))
-                    {
-                        while (i<k && (lineOfFile1 = af1.ReadLine()) != null)
-                        {
-                            var t =  new UTF8Encoding(true).GetBytes(Convert.ToString(a1));
-                            fs.Write(t, 0 , t.Length);
-                            a1 = Convert.ToInt32(lineOfFile1);
-                            i++;
-                        }
-                        while (j<k && (lineOfFile2 = af2.ReadLine()) != null)
-                        {
-                            var t =  new UTF8Encoding(true).GetBytes(Convert.ToString(a2));
-                            fs.Write(t, 0 , t.Length);
-                            a2 = Convert.ToInt32(lineOfFile2);
-                            j++;
-                        }
-                    }
-                    using (FileStream fs = new FileStream("temp.txt", FileMode.OpenOrCreate))
-                    {
-                        while ((lineOfFile1 = af1.ReadLine()) != null)
-                        {
-                            var t =  new UTF8Encoding(true).GetBytes(Convert.ToString(a1));
-                            fs.Write(t, 0 , t.Length);
-                            a1 = Convert.ToInt32(lineOfFile1);
-                            i++;
-                        }
-                        while ((lineOfFile2 = af2.ReadLine()) != null)
-                        {
-                            var t =  new UTF8Encoding(true).GetBytes(Convert.ToString(a2));
-                            fs.Write(t, 0 , t.Length);
-                            a2 = Convert.ToInt32(lineOfFile2);
-                            j++;
-                        }
-                    }
-                    k *= 2;
                 }
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
-            SplitMainFile(mFilePath);
+            showContentBoxMain1.Clear();
             SimpleMergeSort(mFilePath);
+            ReadToFormForShowContent(mFilePath, false);
         }
     }
 }
