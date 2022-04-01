@@ -1,9 +1,0 @@
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\bin\Debug\ExternalMergeSortLab.exe.config
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\bin\Debug\ExternalMergeSortLab.exe
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\bin\Debug\ExternalMergeSortLab.pdb
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\obj\Debug\ExternalMergeSortLab.csprojResolveAssemblyReference.cache
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\obj\Debug\ExternalMergeSortLab.Properties.Resources.resources
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\obj\Debug\ExternalMergeSortLab.csproj.GenerateResource.Cache
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\obj\Debug\ExternalMergeSortLab.exe
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\obj\Debug\ExternalMergeSortLab.pdb
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\ExternalMergeSortLab\obj\Debug\ExternalMergeSortLab.Form1.resources

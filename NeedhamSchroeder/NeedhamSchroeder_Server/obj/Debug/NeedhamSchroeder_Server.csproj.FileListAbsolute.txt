@@ -1,7 +1,0 @@
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\bin\Debug\NeedhamSchroeder_Server.exe.config
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\bin\Debug\NeedhamSchroeder_Server.exe
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\bin\Debug\NeedhamSchroeder_Server.pdb
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\obj\Debug\NeedhamSchroeder_Server.csprojAssemblyReference.cache
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\obj\Debug\NeedhamSchroeder_Server.csproj.CoreCompileInputs.cache
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\obj\Debug\NeedhamSchroeder_Server.exe
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\NeedhamSchroeder\NeedhamSchroeder_Server\obj\Debug\NeedhamSchroeder_Server.pdb

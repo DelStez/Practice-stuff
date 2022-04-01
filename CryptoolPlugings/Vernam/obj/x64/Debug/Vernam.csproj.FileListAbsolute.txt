@@ -1,3 +1,0 @@
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\CryptoolPlugings\Vernam\obj\x64\Debug\Vernam.csprojAssemblyReference.cache
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\CryptoolPlugings\Vernam\obj\x64\Debug\Vernam.g.resources
-C:\Users\Kanda\Documents\GitHub\Practice-stuff\CryptoolPlugings\Vernam\obj\x64\Debug\Vernam.csproj.CoreCompileInputs.cache
